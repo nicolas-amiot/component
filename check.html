@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>CJS</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="check.css">
+		<title>Radio button et checkbox</title>
 	</head>
 	<body>
-		<div data-include="header.html"></div>
-		<br />
-		
 		<label class="checkable">Checkbox 1
-			<input type="checkbox" id="checkbox1" value="Checkbox 1" checked="checked" />
+			<input type="checkbox" id="checkbox1" value="Checkbox 1" checked="checked">
 			<span class="checkmark"></span>
 		</label>
 		<label class="checkable">Checkbox 2
-			<input type="checkbox" id="checkbox2" value="Checkbox 2" />
+			<input type="checkbox" id="checkbox2" value="Checkbox 2">
 			<span class="checkmark"></span>
 		</label>
 		<label class="checkable">Checkbox 3
-			<input type="checkbox" id="checkbox3" value="Checkbox 3" />
+			<input type="checkbox" id="checkbox3" value="Checkbox 3">
 			<span class="checkmark"></span>
 		</label>
-		
-		<br />
-		
+		<br><br>
 		<label class="checkable">Radio 1
-			<input type="radio" name="radio-group" id="radio1" value="Radio 1" checked="checked" />
+			<input type="radio" name="radio-group" id="radio1" value="Radio 1" checked="checked">
 			<span class="checkmark"></span>
 		</label>
 		<label class="checkable">Radio 2
-			<input type="radio" name="radio-group" id="radio2" value="Radio 2" />
+			<input type="radio" name="radio-group" id="radio2" value="Radio 2">
 			<span class="checkmark"></span>
 		</label>
-		<label class="checkable">Radio 3
-			<input type="radio" name="radio-group" id="radio3" value="Radio 3" />
+		<label class="checkable">Radio 31
+			<input type="radio" name="radio-group" id="radio3" value="Radio 3">
 			<span class="checkmark"></span>
 		</label>
-
+		<br><br>
+		<label class="switch">Switch
+			<input type="checkbox" checked>
+			<span class="slider"></span>
+		</label>
 	</body>
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="include.js"></script>
-	<script src="navbar.js"></script>
-	<script src="script.js"></script>
-	<script>$("#checkbox2").prop("indeterminate", true);</script>
+	<script>
+		document.getElementById('checkbox2').indeterminate = true;
+	</script>
 </html>
